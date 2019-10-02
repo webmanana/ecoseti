@@ -1,0 +1,80 @@
+@font-face {
+	font-family: 'Inter';
+	src: url('vendor/fonts/Inter-Regular.otf');
+	font-weight: normal;
+	font-style: normal;
+}
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: "Inter", sans-serif;
+	font-size: 14px;
+	color: #333333;
+	position: relative;
+	padding: 0;
+	margin: 0;
+}
+a {
+	text-decoration: none;
+	color: #333333;
+}
+a:hover {
+	text-decoration: underline;
+}
+ol,
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+input::placeholder {
+	font-size: 14px;
+	text-align: center;
+	color: #333;
+}
+.wrap {
+	background: #fff;
+}
+.container {
+	max-width: 1120px;
+	width: 100%;
+	margin: 0 auto;
+}
+/* header */
+.header__top {
+	background-color: #FBFBFB;
+	border-bottom: 1px solid #EEEEEE;
+	padding: 20px 0;
+}
+.header__top_content {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.header__bottom_content {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.header__bottom_menu ul {
+	display: flex;
+	flex-direction: row;
+}
+.header__bottom_menu ul li {
+	padding-right: 60px;
+}
+.header__bottom_menu ul li a {
+	font-family: "Scania Sans CY", sans-serif;
+	font-size: 16px;
+	line-height: 19px;
+	color: #454D40;
+}
+.header__bottom {
+	background-color: #fff;
+	padding: 20px 0;
+}
+
+@media (max-width: 532px) {
+
+}
