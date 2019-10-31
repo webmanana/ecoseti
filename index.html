@@ -25,17 +25,16 @@
 					</div>
 					<div class="header_top_phone">
 						<div class="header_top_phone_img"></div>
-						<span class="header_top_text">Диспетчер: 8914-300-1308</span>
-						<div class="header_top_phone_dropdown">
-
+						<a href="#" class="header_top_text" data-toggle="dropdown3">Диспетчер: 8914-300-1308</a>
+						<div class="dropdown-pane dropdown_menu dropdown_menu_phone" id="dropdown3" data-dropdown data-auto-focus="true" data-close-on-click="true" data-close-on-click-inside="true">
+							<ul>
+								<li><a href="#">Абон. отдел: 8-984-100-1566</a></li>
+								<li><a href="#">Диспетчер: 8-914-230-0240</a></li>
+								<li><a href="#">Приемная: 8-914-300-1306</a></li>
+							</ul>
 						</div>
 					</div>
-					<div class="header_top_account">
-						<a href="#">
-							<div class="header_top_account_img"></div>
-							<span class="header_top_text">Личный кабинет</span>
-						</a>
-					</div>
+					<a href="#" class="burger_mobile"><img src="img/burger.png" alt=""></a>
 				</div>
 			</div>
 			<div class="header_bottom">
@@ -43,15 +42,38 @@
 					<div class="header_bottom_menu">
 						<ul>
 							<li><a href="">Новости</a></li>
-							<li><a class="dropdown" href="">Услуги</a></li>
+							<li>
+								<a class="dropdown" href="#" data-toggle="dropdown1">Услуги</a>
+								<div class="dropdown-pane dropdown_menu" id="dropdown1" data-dropdown data-auto-focus="true" data-close-on-click="true" data-close-on-click-inside="true">
+									<ul>
+										<li><a href="#">Физическим лицам</a></li>
+										<li><a href="#">УК/ТСЖ</a></li>
+										<li><a href="#">Юридическим лицам</a></li>
+										<li><a href="#">Бюджетным учреждениям</a></li>
+									</ul>
+								</div>
+							</li>
 							<li><a href="">Онлайн-оплата</a></li>
 							<li><a href="">Контакты</a></li>
-							<li><a class="dropdown" href="">Еще</a></li>
+							<li>
+								<a class="dropdown" href="#" data-toggle="dropdown2">Еще</a>
+								<div class="dropdown-pane dropdown_menu" id="dropdown2" data-dropdown data-auto-focus="true" data-close-on-click="true" data-close-on-click-inside="true">
+									<ul>
+										<li><a href="#">Раскрытие информации</a></li>
+										<li><a href="#">Закупки</a></li>
+										<li><a href="#">Вопросы</a></li>
+										<li><a href="#">Документы</a></li>
+										<li><a href="#">Вакансии</a></li>
+										<li><a href="#">О компании</a></li>
+									</ul>
+								</div>
+							</li>
 						</ul>
 					</div>
 					<div class="header_bottom_search">
 						<form class="header_search_form" action="index.html" method="post">
-							<input type="text" name="" value="">
+							<input type="search" class="header_search" name="q" placeholder="Поиск на сайте...">
+							<div class="search"></div>
 						</form>
 					</div>
 				</div>
@@ -165,59 +187,206 @@
 			</div>
 		</div>
 
+		<div class="service">
+			<div class="container">
+				<div class="section_title">
+					<h2>Услуги</h2>
+				</div>
+				<div class="service_inner">
+					<div class="service_block">
+						<a href="#">
+							<div class="service_desc">
+								<h3>Физическим лицам</h3>
+								<span>График вывоза ТБО, документы</span>
+							</div>
+							<div class="service_img">
+								<img src="img/service1.jpg" alt="">
+							</div>
+						</a>
+					</div>
+					<div class="service_block">
+						<a href="#">
+							<div class="service_desc">
+								<h3>Юридическим лицам</h3>
+								<span>Калькулятор стоимости услуг, типовые договоры</span>
+							</div>
+							<div class="service_img">
+								<img src="img/service2.jpg" alt="">
+							</div>
+						</a>
+					</div>
+					<div class="service_block">
+						<a href="#">
+							<div class="service_desc">
+								<h3>Бюджетным организациям</h3>
+								<span>Калькулятор стоимости услуг, типовые договоры</span>
+							</div>
+							<div class="service_img">
+								<img src="img/service3.jpg" alt="">
+							</div>
+						</a>
+					</div>
+					<div class="service_block">
+						<a href="#">
+							<div class="service_desc">
+								<h3>УК/ТСЖ</h3>
+								<span>Калькулятор стоимости услуг, типовые договоры</span>
+							</div>
+							<div class="service_img">
+								<img src="img/service4.jpg" alt="">
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="contact">
+			<div class="container">
+				<div class="section_title">
+					<h2>Обратная связь</h2>
+				</div>
+				<div class="contact_inner">
+					<h3>Задайте интересующий вопрос, и мы ответим Вам</h3>
+					<form class="contact_form" action="index.html" method="post">
+						<div class="contact_top">
+							<div class="contact_block">
+								<span>Как вас зовут?</span>
+								<input type="text" name="" value="" placeholder="Ваше имя">
+							</div>
+							<div class="contact_block">
+								<span>Ваш телефон</span>
+								<input type="text" name="" value="" placeholder="+ 7 ">
+							</div>
+							<div class="contact_block">
+								<span>e-mail</span>
+								<input type="text" name="" value="" placeholder="example@mail.ru">
+							</div>
+						</div>
+						<div class="contact_bottom">
+							<span>Что Вас интересует?</span>
+							<input type="text" name="" value="" placeholder="Введите текст вопроса">
+						</div>
+						<div class="contact_check">
+							<label for="check2">Согласен (-на) на обработку персональных данных</label><input type="checkbox" id="check2">
+						</div>
+						<div class="contact_submit">
+							<input type="submit" name="" value="Отправить">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
 		<div class="footer">
 			<div class="footer_top">
-				<div class="footer_container">
-					<div class="footer_inner accordion" data-responsive-accordion-tabs="accordion small-accordion">
-						<div class="footer_block" data-accordion-item>
-							<a class="footer_block_title">Каталог товаров</a>
-							<div class="footer_block_content" data-tab-content>
-								<ul>
-									<li><a href="#">Книги</a></li>
-									<li><a href="#">Учебные издания</a></li>
-									<li><a href="#">Игрушки и игры</a></li>
-									<li><a href="#">Подарки, сувениры и букбоксы</a></li>
-								</ul>
-							</div>
+				<div class="container footer_top_inner">
+					<div class="footer_top_block">
+						<span>Диспетчер:</span>
+						<a href="#!" data-toggle="dropdown_bottom">8-914-230-0240</a>
+						<div class="dropdown-pane" id="dropdown_bottom" data-dropdown data-auto-focus="true" data-close-on-click="true" data-close-on-click-inside="true">
+							<ul class="dropdown_footer_phone">
+								<li><a href="#">8-914-230-0240</a></li>
+								<li><a href="#">8-914-230-0240</a></li>
+							</ul>
 						</div>
-						<div class="footer_block" data-accordion-item>
-							<a class="footer_block_title">Издательство</a>
-							<div class="footer_block_content" data-tab-content>
-								<ul>
-									<li><a href="#">О нас</a></li>
-									<li><a href="#">Услуги</a></li>
-									<li><a href="#">Магазины</a></li>
-									<li><a href="#">Новости и события</a></li>
-									<li><a href="#">Оплата и доставка</a></li>
-									<li><a href="#">Контакты</a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="footer_block is-active" data-accordion-item>
-							<a class="footer_block_title">Контакты</a>
-							<div class="footer_block_content" data-tab-content>
-								<div class="footer_text">
-									<p>Акционерное Общество "Национальная издательская компания "Бичик" им. С.А. Новгородова"</p>
-									<p>г. Якутск, ул. Курашова, 30/1</p>
-									<p>Телефон: 8-800-250-13-38</p>
-									<p>Электронная почта: <a href="mailto:book@bichik.ru">book@bichik.ru</a></p>
-								</div>
-								<div class="footer_soc">
-									<p>Мы в социальных сетях</p>
-									<ul>
-										<li><a href="#"><img src="img/vk.svg" alt=""></a></li>
-										<li><a href="#"><img src="img/instagram.svg" alt=""></a></li>
-										<li><a href="#"><img src="img/youtube.svg" alt=""></a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
+					</div>
+					<div class="footer_top_block">
+						<span>Мы в соцсетях:</span>
+						<ul class="footer_social">
+							<li><a href="#"><img src="img/insta.png" alt=""></a></li>
+							<li><a href="#"><img src="img/facebook.png" alt=""></a></li>
+						</ul>
+					</div>
+					<div class="footer_top_block">
+						<span>Абонентский отдел: г. Якутск, ул.Орджоникидзе 33/1, 2 этаж </span>
 					</div>
 				</div>
 			</div>
 			<div class="footer_bottom">
-				<div class="footer_container">
-					<span>2019 НКИ "Бичик"</span>
+				<div class="container">
+					<div class="footer_bottom_inner">
+
+						<div class="footer_bottom_block">
+							<ul class="footer_bottom_menu menu vertical" id="footer_menu" data-responsive-menu="small-accordion">
+						    <li class="has-submenu">
+						      <a href="#">О компании</a>
+						      <ul>
+						        <li><a href="#" aria-label="">О компании</a></li>
+						        <li><a href="#" aria-label="">Новости</a></li>
+						        <li><a href="#" aria-label="">Раскрытие информации</a></li>
+										<li><a href="#" aria-label="">Закупки</a></li>
+						        <li><a href="#" aria-label="">Вакансии</a></li>
+										<li><a href="#" aria-label="">Контакты</a></li>
+						      </ul>
+						    </li>
+						  </ul>
+						</div>
+
+						<div class="footer_bottom_block">
+							<ul class="footer_bottom_menu menu vertical" id="footer_menu" data-responsive-menu="small-accordion">
+						    <li class="has-submenu">
+						      <a href="#">Услуги</a>
+						      <ul>
+						        <li><a href="#" aria-label="">Физическим лицам</a></li>
+						        <li><a href="#" aria-label="">Юридическим лицам</a></li>
+						        <li><a href="#" aria-label="">УК/ТСЖ</a></li>
+										<li><a href="#" aria-label="">Бюджетным учреждениям</a></li>
+						      </ul>
+						    </li>
+						  </ul>
+						</div>
+
+						<div class="footer_bottom_block">
+							<ul class="footer_bottom_menu menu vertical" id="footer_menu" data-responsive-menu="small-accordion">
+						    <li class="has-submenu">
+						      <a href="#">Вопросы</a>
+						      <ul>
+						        <li><a href="#" aria-label="">Частые вопросы</a></li>
+						        <li><a href="#" aria-label="">Обратная связь</a></li>
+						      </ul>
+						    </li>
+						  </ul>
+						</div>
+
+						<div class="footer_bottom_block">
+							<ul class="footer_bottom_menu menu vertical" id="footer_menu" data-responsive-menu="small-accordion">
+						    <li class="has-submenu">
+						      <a href="#">Онлайн-оплата</a>
+						      <ul>
+						        <li><a href="#" aria-label="">Сбербанк</a></li>
+						        <li><a href="#" aria-label="">Биллинг</a></li>
+						      </ul>
+						    </li>
+						  </ul>
+						</div>
+
+						<div class="footer_bottom_url">
+							<a href="#" class="footer_url">Вопросы</a>
+							<a href="#" class="footer_url"><img src="img/map.png" alt=""> Карта сайта</a>
+							<a href="#" class="footer_url">Форма обратной связи</a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="footer_copyright">
+				<div class="container">
+					<div class="footer_footer_copyright_top">
+						<div class="footer_map">
+							<a href="#" class="footer_map_text_1"><img src="img/map.png" alt=""> Карта сайта</a>
+							<span class="footer_map_text_2">Есть вопросы? Заполните <a href="#">форму обратной связи</a> </span>
+						</div>
+						<div class="footer_search">
+							<form class="footer_search_form" action="index.html" method="post">
+								<input type="search" class="footer_search" name="q" placeholder="Поиск на сайте...">
+								<div class="search"></div>
+							</form>
+						</div>
+					</div>
+					<div class="footer_copyright_bottom">
+						<span>© 2019 “ЯКУТСКЭКОСЕТИ”</span>
+						<a href="http://platforma.bz">Разработано в <img src="img/platforma.png" alt="Разработка сайтов"></a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -240,6 +409,22 @@
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		swipeToSlide: true,
+	});
+
+	$(window).on('load resize', function() {
+			if ($(window).width() > 768) {
+				$('.footer_bottom_menu ul').css( "display", "block" );
+				$('.footer_bottom_menu').removeClass('accordion-menu');
+				$( ".footer_bottom_menu" ).removeAttr( "data-accordion-menu" );
+				$( ".footer_bottom_menu" ).removeAttr( "data-responsive-menu" );
+			} else {
+			}
+	});
+	$('.header_search').focus(function() {
+		$('.border').addClass('active');
+	});
+	$('.header_search').focusout(function() {
+		$('.border').removeClass('active');
 	});
 </script>
 
