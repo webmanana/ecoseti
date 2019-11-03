@@ -1234,6 +1234,123 @@ input::placeholder {
 	width: 100%!important;
 	border: none!important;
 }
+.services_desc_text {
+	display: flex;
+	flex-direction: column;
+}
+.services_desc {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.services_desc_img {
+	width: 146px;
+}
+.services_desc_text {
+	padding-left: 32px;
+	flex: 1;
+}
+.services_desc_text h3 {
+	font-family: "Scania Sans CY", sans-serif;
+	font-size: 20px;
+	color: #17A24C;
+	margin-top: 0;
+	margin-bottom: 12px;
+}
+.services_desc_text span {
+	font-family: "Scania Sans CY", sans-serif;
+	font-size: 14px;
+	color: #AFAFAF;
+}
+.services_desc_text p {
+	color: #333;
+}
+.services_block h3 {
+	font-size: 20px;
+	color: #333333;
+	margin-top: 0;
+	margin-bottom: 18px;
+}
+.services_block_desc {
+	font-size: 15px;
+	color: #AFAFAF;
+}
+.services_block_url {
+  font-size: 15px;
+  color: #AFAFAF;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.services_block {
+	width: 50%;
+	padding-left: 16px;
+	padding-right: 16px;
+	padding-bottom: 16px;
+	padding-top: 16px;
+}
+.services_block a {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+.services_list {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-left: -16px;
+	margin-right: -16px;
+}
+.services_block_border {
+	border: 1px solid #eee;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	border-radius: 5px;
+	padding: 18px;
+}
+.services_block_border:hover {
+	box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+}
+.services_block_border:hover h3, .services_block_border:hover .services_block_url {
+	color: #17A24C;
+}
+.services_block_url img {
+	margin-left: 8px;
+}
+.services_docs ul {
+	display: flex;
+	flex-direction: column;
+}
+.services_docs ul li a {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.services_docs_img {
+	width: 25px;
+}
+.services_docs_desc {
+	flex: 1;
+	padding-left: 16px;
+	margin-top: 0;
+	font-size: 14px;
+	color: #AFAFAF;
+}
+.services_docs_desc p {
+	margin-top: 0;
+}
+.services_docs ul li {
+	margin-bottom: 32px;
+}
+.services_title {
+	font-size: 20px!important;
+}
+.services_docs ul li a:hover .services_docs_desc {
+	color: #17A24C;
+}
 @media (max-width: 1200px) {
 	.container {
 		max-width: 960px;
