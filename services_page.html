@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Услуги</title>
+	<title>Услуги | Услуги для физических лиц</title>
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Playfair+Display:400,700&display=swap&subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="vendor/foundation/css/foundation.css">
 	<link rel="stylesheet" href="vendor/foundation/css/app.css">
@@ -144,87 +144,110 @@
 		<div class="page">
 			<div class="container">
 				<h1>Услуги</h1>
-				<div class="services_desc">
-					<div class="services_desc_img">
-						<img src="img/car.png" alt="">
+				<form class="calc_inner" action="index.html" method="post">
+					<div class="calc">
+						<h3>Калькулятор расчета стоимости вывоза мусора</h3>
+						<span class="calc_title">1. Выберите населенный пункт</span>
+						<label for="select1" class="select_city">
+							<select id="select1">
+								<option value="YA">Якутск</option>
+						    <option value="MI">Мирный</option>
+						   </select>
+						 </label>
+					  <span class="calc_title">2. Выберите тип жилья</span>
+						<input type="radio" id="option1" name="radio" value="a1" checked>
+						<label for="option1" class="label_form">
+							Квартира в многоквартирном доме
+						</label>
+						<input type="radio" id="option2" name="radio" value="a2">
+						<label for="option2" class="label_form">
+							Частный дом
+						</label>
+						<span class="calc_title last_calc">3. Введите количество проживающих</span>
+						<div class="input-group plus-minus-input">
+							<div class="input-group-button">
+								<button type="button" class="minus disabled" data-quantity="minus" data-field="quantity">
+									<img src="img/minus.svg" alt="">
+								</button>
+							</div>
+							<input class="input-group-field" type="number" name="quantity" min="1" value="1">
+							<div class="input-group-button">
+								<button type="button" class="plus" data-quantity="plus" data-field="quantity">
+									<img src="img/plus.svg" alt="">
+								</button>
+							</div>
+						</div>
+						<div class="input_inner">
+							<input type="submit" name="" value="Рассчитать">
+						</div>
 					</div>
-					<div class="services_desc_text">
-						<h3>Обращение с твердыми бытовыми отходами</h3>
-						<span>Это наше основное направление деятельности</span>
-						<p>Не следует, однако забывать, что дальнейшее развитие различных форм деятельности требуют определения и уточнения направлений прогрессивного развития. Таким образом консультация с широким активом обеспечивает широкому кругу (специалистов) участие в формировании существенных финансовых и административных условий. Повседневная практика показывает, что сложившаяся структура организации представляет собой интересный эксперимент проверки дальнейших направлений развития. </p>
+					<div class="form_result">
+						<span>Ваш тариф составляет:</span>
+						<input type="text" name="" value="" placeholder="0.00 руб / в месяц">
 					</div>
+				</form>
+				<div class="calc_text">
+					<h3>Как складывается стоимость?</h3>
+					<a href="#">
+						<div class="calc_text_img">
+							<img src="img/pdf.png" alt="">
+						</div>
+						<div class="calc_text_desc">
+							<span>Расчет предельного единого тарифа для населения на услуги региональных операторов по обращению с твердыми коммунальными отходами на территории Республики Саха (Якутия) на 2019</span><br>
+							<span>pdf (1.5 Мбайт)</span>
+						</div>
+					</a>
 				</div>
-				<div class="services_list">
-					<div class="services_block">
-						<div class="services_block_border">
-							<h3>Физическим лицам</h3>
-							<span class="services_block_desc">График вывоза ТБО, документы</span>
-							<span class="services_block_url">Далее <img src="img/services_arrow.svg"></span>
-							<a href="#"></a>
+				<div class="calc_text calc_background">
+					<h3>График вывоза мусора</h3>
+					<a href="#">
+						<div class="calc_text_img">
+							<img src="img/pdf.png" alt="">
 						</div>
-					</div>
-					<div class="services_block">
-						<div class="services_block_border">
-							<h3>Юридическим лицам</h3>
-							<span class="services_block_desc">Типовые договоры</span>
-							<span class="services_block_url">Далее <img src="img/services_arrow.svg"></span>
-							<a href="#"></a>
+						<div class="calc_text_desc">
+							<span>Маршрут-график №Ю-6ХТ	транспортирования твердых коммунальных отходов (ТКО) на территории ГО г. Якутск</span><br>
+							<span>pdf (1.5 Мбайт)</span>
 						</div>
-					</div>
-					<div class="services_block">
-						<div class="services_block_border">
-							<h3>Бюджетным организациям</h3>
-							<span class="services_block_desc">График вывоза ТБО, документы</span>
-							<span class="services_block_url">Далее <img src="img/services_arrow.svg"></span>
-							<a href="#"></a>
-						</div>
-					</div>
-					<div class="services_block">
-						<div class="services_block_border">
-							<h3>УК/ТСЖ</h3>
-							<span class="services_block_desc">График вывоза ТБО, документы</span>
-							<span class="services_block_url">Далее <img src="img/services_arrow.svg"></span>
-							<a href="#"></a>
-						</div>
-					</div>
+					</a>
 				</div>
-				<h1 class="services_title">Типовые договоры и тарификация</h1>
-				<div class="services_docs">
-					<ul>
-						<li>
-							<a href="#">
-								<div class="services_docs_img">
-									<img src="img/pdf.png" alt="">
-								</div>
-								<div class="services_docs_desc">
-									<p>Расчет предельного единого тарифа для населения на услуги региональных операторов по обращению с твердыми коммунальными отходами на территории Республики Саха (Якутия) на 2019</p>
-									<span>pdf (1.5 Мбайт)</span>
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<div class="services_docs_img">
-									<img src="img/pdf.png" alt="">
-								</div>
-								<div class="services_docs_desc">
-									<p>Расчет предельного единого тарифа для населения на услуги региональных операторов по обращению с твердыми коммунальными отходами на территории Республики Саха (Якутия) на 2019</p>
-									<span>pdf (1.5 Мбайт)</span>
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<div class="services_docs_img">
-									<img src="img/pdf.png" alt="">
-								</div>
-								<div class="services_docs_desc">
-									<p>Расчет предельного единого тарифа для населения на услуги региональных операторов по обращению с твердыми коммунальными отходами на территории Республики Саха (Якутия) на 2019</p>
-									<span>pdf (1.5 Мбайт)</span>
-								</div>
-							</a>
-						</li>
-					</ul>
+				<div class="calc_text calc_background">
+					<h3>Документы</h3>
+					<a href="#">
+						<div class="calc_text_img">
+							<img src="img/pdf.png" alt="">
+						</div>
+						<div class="calc_text_desc">
+							<span>Расчет предельного единого тарифа для населения на услуги региональных операторов по обращению с твердыми коммунальными отходами на территории Республики Саха (Якутия) на 2019</span><br>
+							<span>pdf (1.5 Мбайт)</span>
+						</div>
+					</a>
+					<a href="#">
+						<div class="calc_text_img">
+							<img src="img/pdf.png" alt="">
+						</div>
+						<div class="calc_text_desc">
+							<span>Расчет предельного единого тарифа для населения на услуги региональных операторов по обращению с твердыми коммунальными отходами на территории Республики Саха (Якутия) на 2019</span><br>
+							<span>pdf (1.5 Мбайт)</span>
+						</div>
+					</a>
+					<a href="#">
+						<div class="calc_text_img">
+							<img src="img/pdf.png" alt="">
+						</div>
+						<div class="calc_text_desc">
+							<span>Расчет предельного единого тарифа для населения на услуги региональных операторов по обращению с твердыми коммунальными отходами на территории Республики Саха (Якутия) на 2019</span><br>
+							<span>pdf (1.5 Мбайт)</span>
+						</div>
+					</a>
+					<a href="#">
+						<div class="calc_text_img">
+							<img src="img/pdf.png" alt="">
+						</div>
+						<div class="calc_text_desc">
+							<span>Расчет предельного единого тарифа для населения на услуги региональных операторов по обращению с твердыми коммунальными отходами на территории Республики Саха (Якутия) на 2019</span><br>
+							<span>pdf (1.5 Мбайт)</span>
+						</div>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -354,78 +377,41 @@
 <script type="text/javascript" src="vendor/slick/slick.min.js"></script>
 <script src="main.js"></script>
 <script type="text/javascript">
-$('.page_top_img').slick({
-	slidesToShow: 1,
-	slidesToScroll: 1,
-	arrows: false,
-	fade: false,
-	asNavFor: '.page_bot_img',
-	responsive: [
-		{
-			breakpoint: 820,
-			settings: {
-			arrows: true,
-			prevArrow: $('.left_slide'),
-			nextArrow: $('.right_slide'),
+	jQuery(document).ready(function(){
+		$( ".input-group-field" ).change(function() {
+			var currentVal = parseInt($('input[name="quantity"]').val());
+			if (currentVal == 1) {
+				$(".minus").addClass("disabled");
 			}
-		}
-		// You can unslick at a given breakpoint now by adding:
-		// settings: "unslick"
-		// instead of a settings object
-	]
-});
-$('.page_bot_img').slick({
-	slidesToShow: 7,
-	slidesToScroll: 1,
-	asNavFor: '.page_top_img',
-	focusOnSelect: true,
-	infinite: false,
-	arrows: false,
-	responsive: [
-		{
-			breakpoint: 1400,
-			settings: {
-			slidesToShow: 5,
-			}
-		},
-		{
-			breakpoint: 1280,
-			settings: {
-			slidesToShow: 4,
-			}
-		},
-		{
-			breakpoint: 920,
-			settings: {
-			slidesToShow: 5,
-			}
-		},
-		{
-			breakpoint: 640,
-			settings: {
-			slidesToShow: 4,
-			}
-		},
-		{
-			breakpoint: 500,
-			settings: {
-			slidesToShow: 3,
-			}
-		},
-		{
-			breakpoint: 450,
-			settings: {
-			slidesToShow: 5,
-			}
-		},
-		{
-			breakpoint: 400,
-			settings: {
-			slidesToShow: 4,
-			}
-		}
-	]
-});
+		});
+	   $('[data-quantity="plus"]').on("click",function(e){
+		   e.preventDefault();
+		   fieldName = $(this).attr('data-field');
+		   var currentVal = parseInt($('input[name='+fieldName+']').val());
+		   if (!isNaN(currentVal)) {
+			   $('input[name='+fieldName+']').val(currentVal + 1);
+		   } else {
+			   $('input[name='+fieldName+']').val(1);
+		   }
+		   if (currentVal == 1) {
+			   $(this).parents(".plus-minus-input").find(".minus").removeClass("disabled");
+		   }
+	   });
+	   $('[data-quantity="minus"]').click(function(e) {
+		   e.preventDefault();
+		   fieldName = $(this).attr('data-field');
+		   var currentVal = parseInt($('input[name='+fieldName+']').val());
+
+		   if (currentVal == 2) {
+			   $(".minus").addClass("disabled");
+		   }
+		   if (!isNaN(currentVal) && currentVal > 1) {
+			   $('input[name='+fieldName+']').val(currentVal - 1);
+		   } else {
+			   $('input[name='+fieldName+']').val(1);
+		   }
+	   });
+   });
 
 	$(window).on('load resize', function() {
 			if ($(window).width() > 768) {
