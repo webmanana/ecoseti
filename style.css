@@ -1683,6 +1683,33 @@ input::placeholder {
 	align-items: center;
 	justify-content: center;
 }
+.map {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.map ul {
+	width: 25%;
+}
+.map ul li {
+	margin-bottom: 18px;
+}
+.map ul span {
+	font-family: "Scania Sans CY", sans-serif;
+	font-size: 22px;
+	color: #454D40;
+	display: flex;
+	margin-bottom: 32px;
+}
+.map ul li a {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	color: #828282;
+}
+.map ul li a:hover {
+	color: #60A031;
+}
 @media (max-width: 1200px) {
 	.container {
 		max-width: 960px;
@@ -1826,6 +1853,9 @@ input::placeholder {
 	.service_block {
 		width: 100%;
 		margin-bottom: 16px;
+	}
+	.map ul {
+		width: 50%;
 	}
 	.back_url, .services_block h3 {
 		font-size: 16px;
@@ -2143,6 +2173,15 @@ input::placeholder {
 	.page_top_img_slide img {
 		border-radius: 0;
 	}
+	.map ul li a {
+		font-size: 15px;
+	}
+	.map ul span {
+		font-size: 18px;
+	}
+	.map ul span {
+		margin-bottom: 26px;
+	}
 }
 @media (max-width: 568px) {
 	.news_list_img {
@@ -2156,7 +2195,10 @@ input::placeholder {
 	}
 	.news_page_slider {
     height: 270px;
-}
+	}
+	.map ul {
+		width: 100%;
+	}
 	.news_list_desc {
 		padding: 16px 0 0 0;
 	}
